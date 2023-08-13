@@ -1,12 +1,15 @@
-#include <stdio.h>
 #include <unistd.h>
-/** 
- * main -  A C program that prints a line to the standard erorr
+#include <fcntl.h>
+#include <string.h>
+/**
+ * main -  A C program that works
  * Return: 1 (successful)
  */
 
 int main(void)
 {
-	putf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
-	return (1);
+    const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    int fd = STDERR_FILENO;
+    write(fd, message, strlen(message));
+    return 1;
 }
