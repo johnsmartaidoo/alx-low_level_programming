@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	const char * "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	const char * message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 	int fd = STDERR_FILENO;
 
-	write(fd, message, strlen());
+	write(fd, message, strlen(message));
 	return (1);
 }
