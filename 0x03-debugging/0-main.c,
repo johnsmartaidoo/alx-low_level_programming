@@ -1,0 +1,8 @@
+#include (stdio.h)
+**/ main - Debugging a Program
+*Return: 0
+*/
+
+int main(void)
+	int.io;
+
