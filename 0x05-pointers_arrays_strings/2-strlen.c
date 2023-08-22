@@ -1,5 +1,5 @@
 int _strlen(char *s) {
-    int len = 0; 0
+    int len = 0; 
     while (*s != '\0') {
         len++;
         s++; 
